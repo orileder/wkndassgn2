@@ -293,23 +293,23 @@ const carMarket = require("./obj.js");
 
 // Calculate and return the total revenue of the entire market (Method:getTotalMarketRevenue)--------------------
 
-function getTotalMarketRevenue(carMarket) {
-    let totalRevenue = 0;
+// function getTotalMarketRevenue(carMarket) {
+//     let totalRevenue = 0;
 
-    for (const agency of carMarket.sellers) {
-            totalRevenue += agency.cash
-            totalRevenue += agency.credit
-            for (const car of agency.cars) {
-                for (const model of car.models) {
-                    totalRevenue += model.price;
-                }
-            }
-        }
-        return totalRevenue;
-    }
+//     for (const agency of carMarket.sellers) {
+//             totalRevenue += agency.cash
+//             totalRevenue += agency.credit
+//             for (const car of agency.cars) {
+//                 for (const model of car.models) {
+//                     totalRevenue += model.price;
+//                 }
+//             }
+//         }
+//         return totalRevenue;
+//     }
     
 
-const result = getTotalMarketRevenue(carMarket)
-console.log(result);
+// const result = getTotalMarketRevenue(carMarket)
+// console.log(result);
 
     
